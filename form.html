@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form action="https://formspree.io/irodyukvova@gmail.com" method="POST">
+        <fieldset>
+            <h2>Як ви відноситесь до спорту?</h2>
+            <label>
+                <input type="radio" name="sports" value="Позитивно">
+                <span>Позитивно</span><br>
+            </label>
+            <label>
+                <input type="radio" name="sports" value="Негативно">
+                <span>Негативно</span><br>
+            </label>
+            <label>
+                <input type="radio" name="sports" value="Нейтрально">
+                <span>Нейтрально</span><br>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <h2>Чи займаєтесь ви спортом?</h2>
+            <label>
+                <input type="checkbox" name="engage" value="Так">
+                <span>Так</span><br>
+            </label>
+            <label>
+                <input type="checkbox" name="engage" value="Ні">
+                <span>Ні</span><br>
+            </label>
+            <label>
+                <input type="checkbox" name="engage" value="Планую">
+                <span>Планую</span><br>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <h2>Яким видом спорту ви займаєтесь?</h2>
+            <textarea placeholder="Введіть тут" cols="50" name="kind"></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <h2>Яким спортом з нижче наведених ви займались?</h2>
+            <label for="sport1">Бокс</label>
+                <input type="radio" name="sport" id="sport1" value="Бокс"><br>
+            <label for="sport2">Футбол</label>
+                <input type="radio" name="sport" id="sport2" value="Футбол"><br>
+            <label for="sport3">Волейбол</label>
+                <input type="radio" name="sport" id="sport3" value="Волейбол"><br>
+            <label for="sport4">Теніс</label>
+                <input type="radio" name="sport" id="sport4" value="Теніс"><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Яким видом спорту з наведених ви б хотіли зайнятись?</legend>
+            <p>
+                <input type="radio" name="kindsport" value="Плавання">Плавання<br>
+                <input type="radio" name="kindsport" value="Мотоспорт">Мотоспорт<br>
+                <input type="radio" name="kindsport" value="Кіберспорт">Кіберспорт<br>
+                <input type="radio" name="kindsport" value="Легка атлетика">Легка атлетика<br>
+            </p>
+        </fieldset>
+        
+        <fieldset>
+                 <input type="text" name="name" id="name" placeholder="Ваше ім'я">
+            <label for="name">Введіть ваше ім'я</label><br>
+                <input type="email" name="email" id="email" required>
+            <label for="email">Email:</label><br>
+                <input type="number" min="1" max="110" name="age">
+            <label for="age">Ваш вік:</label><br>
+                <input type="number" required id="phonenumber" name="phonenumber" pattern="[0-9]{12}" placeholder="380666778899">
+            <label for="phonenumber">Номер телефону</label><br>
+            <input type="submit" name="submit">
+            <input type="reset" name="reset">
+                
+        </fieldset>
+    </form>
+</body>
+</html>
